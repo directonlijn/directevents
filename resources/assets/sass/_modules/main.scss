@@ -1,0 +1,22 @@
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+body {
+    &.jumbotron {
+        background: #f7f7f7;
+    }
+
+    #app {
+        padding-top: 66px;
+
+        nav {
+            .navbar-brand {
+                img {
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
