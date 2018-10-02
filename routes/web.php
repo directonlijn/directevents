@@ -73,14 +73,12 @@
 //    // if ($user->hasRole('owner')) return 'you are the owner';
 //});
 Route::post('/setCookie', function(\Illuminate\Http\Request $request){
-    dd($request->input('sessionId'));
     Session::setId($request->input('sessionId'));
     Session::start();
 
     return 'Cookie created';
 
 });
-echo Session::getId();
 
 Auth::routes();
 
