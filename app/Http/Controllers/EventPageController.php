@@ -101,7 +101,7 @@ class EventPageController extends Controller
             $eventId = session('domainDetails')['event_id'];
         } else {
             // Fallback in case of expired session
-            $eventId = $request->get('eventId');
+            $eventId = $request->input('eventId');
         }
         $event = \App\Event::where('id', $eventId)->get();
 
