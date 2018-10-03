@@ -1,4 +1,4 @@
-@servers(['web' => ['git@128.199.63.237']])
+@servers(['web' => ['root@128.199.63.237']])
 
 @task('deploy', ['on' => 'web'])
     cd /var/git/directevents
