@@ -1,4 +1,4 @@
-@servers(['web' => ['root@128.199.63.237']])
+@servers(['web' => 'root@128.199.63.237'])
 
 @task('deploy', ['on' => 'web'])
     {{-- go to the right directory --}}
